@@ -26,6 +26,17 @@ public class enemy : MonoBehaviour
     {
         this.rigidbody.velocity = new Vector2(0, -this.speedY);
 
+
+        Camera camera = Camera.main;
+        Vector3 posicaoNaCamera = camera.WorldToViewportPoint(this.transform.position);
+        if (posicaoNaCamera.y <0)
+        {
+            //inimigo saiu da area da camera
+            player player = GameObject.FindGameObjectWithTag("Player").GetComponent<player>();
+            player.Vida--;
+            Destroy(this.gameObject);
+        }
+
     }
 
     public void Destroy() 

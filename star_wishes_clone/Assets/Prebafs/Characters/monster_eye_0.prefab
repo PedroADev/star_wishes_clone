@@ -165,5 +165,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 8317367389363931983}
-  speedMin: 2
-  speedMax: 3
+  speedMin: 3
+  speedMax: 4

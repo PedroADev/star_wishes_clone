@@ -29,6 +29,8 @@ public class player : MonoBehaviour
 
     public int vidas;
 
+    private FimJogo telaFimJogo;
+
 
    
 
@@ -38,6 +40,12 @@ public class player : MonoBehaviour
     {
         this.vidas = 5;
         points.Pontuacao = 0;
+
+        GameObject fimJogoGameObject = GameObject.FindGameObjectWithTag("TelaFimJogo");
+        this.telaFimJogo = fimJogoGameObject.GetComponent<FimJogo>();
+        this.telaFimJogo.Esconder();
+
+
     }
 
     // Update is called once per frame
@@ -73,13 +81,23 @@ public class player : MonoBehaviour
             this.vidas = value;
             if (this.vidas < 0)
             {
-                this.vidas = 0;            }
+                this.vidas = 0;
+
+                //exibir tela de fim de jogo
+                telaFimJogo.Exibir();
+
+            }
         }
     }
 
-  
 
 
-   
+
+
 
 }
+
+
+//🗿🗿
+
+  

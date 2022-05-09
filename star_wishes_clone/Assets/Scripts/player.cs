@@ -82,6 +82,7 @@ public class player : MonoBehaviour
             if (this.vidas < 0)
             {
                 this.vidas = 0;
+                this.gameObject.SetActive(false);
 
                 //exibir tela de fim de jogo
                 telaFimJogo.Exibir();

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - enemy
   - TelaFimJogo
+  - TelaFaseConcluida
   layers:
   - Default
   - TransparentFX

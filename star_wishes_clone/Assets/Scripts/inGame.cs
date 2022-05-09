@@ -16,6 +16,8 @@ public class inGame : MonoBehaviour
 
         this.player = GameObject.FindGameObjectWithTag("Player").GetComponent<player>();
 
+ 
+
     }
 
     // Update is called once per frame

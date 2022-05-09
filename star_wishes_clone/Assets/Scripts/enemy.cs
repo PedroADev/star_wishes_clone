@@ -9,9 +9,9 @@ public class enemy : MonoBehaviour
 
     public float speedMin;
     public float speedMax;
-  
-
     private float speedY;
+
+    public ParticleSystem particulaExplosaoPrefab;
 
 
 
@@ -43,8 +43,10 @@ public class enemy : MonoBehaviour
     {
         
     points.Pontuacao++;
-     
 
+
+     ParticleSystem particulaExplosao = Instantiate(this.particulaExplosaoPrefab, this.transform.position, Quaternion.identity);
+        Destroy(particulaExplosao.gameObject, 1f);
        
     Destroy(this.gameObject);
     }

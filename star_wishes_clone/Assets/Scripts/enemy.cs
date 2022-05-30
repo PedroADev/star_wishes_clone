@@ -13,6 +13,14 @@ public class enemy : MonoBehaviour
 
     public ParticleSystem particulaExplosaoPrefab;
 
+    [SerializeField]
+    [Range(0, 100)]
+    private float chanceSoltarItemVida;
+
+    [SerializeField]
+    private ItemVida itemVidaPrefab;
+
+
 
 
     // Start is called before the first frame update
@@ -43,11 +51,25 @@ public class enemy : MonoBehaviour
     {
         
     points.Pontuacao++;
+        SoltarItemVida();
 
 
      ParticleSystem particulaExplosao = Instantiate(this.particulaExplosaoPrefab, this.transform.position, Quaternion.identity);
+      
         Destroy(particulaExplosao.gameObject, 1f);
+
+
        
     Destroy(this.gameObject);
+    }
+
+    private void SoltarItemVida()
+    {
+        float chanceAleatoria = Random.Range(0f, 100f);
+        if (chanceAleatoria <= this.chanceSoltarItemVida)
+        {
+            Instantiate(this.itemVidaPrefab, this.transform.position, Quaternion.identity);
+        }
+
     }
 }

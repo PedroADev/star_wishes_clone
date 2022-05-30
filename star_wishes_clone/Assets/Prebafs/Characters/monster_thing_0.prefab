@@ -167,5 +167,8 @@ MonoBehaviour:
   rigidbody: {fileID: 7283642256417908919}
   speedMin: 3
   speedMax: 6
-  particulaExplosaoPrefab: {fileID: 4459258619046765606, guid: 34f4e845956c30140a6016a5204ee553,
+  particulaExplosaoPrefab: {fileID: 4459258619046765606, guid: 66e5dd7a303ccd54590c3617358009a6,
+    type: 3}
+  chanceSoltarItemVida: 20
+  itemVidaPrefab: {fileID: 8792824406042452857, guid: c2a79dcc0c1449a488a26816c6060a04,
     type: 3}

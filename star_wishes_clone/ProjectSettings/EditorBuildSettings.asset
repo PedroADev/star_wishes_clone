@@ -5,10 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Faseteste.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
     path: Assets/Builds/hmm.unity
     guid: 28bb4c1104b556340be0146bd1665dea
+  - enabled: 0
+    path: Assets/Scenes/Fase01.unity
+    guid: 1eb1022da1a2aa84bae5f5c0e955835c
+  - enabled: 1
+    path: Assets/Scenes/Fase02.unity
+    guid: df7ff2297be541941bb137e6889bad5f
   m_configObjects: {}

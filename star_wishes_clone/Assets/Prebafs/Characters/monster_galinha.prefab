@@ -115,7 +115,10 @@ MonoBehaviour:
   rigidbody: {fileID: 1839596391914680133}
   speedMin: 1
   speedMax: 2
-  particulaExplosaoPrefab: {fileID: 4459258619046765606, guid: 34f4e845956c30140a6016a5204ee553,
+  particulaExplosaoPrefab: {fileID: 4459258619046765606, guid: 4ee11f55d54211346a4065084146428c,
+    type: 3}
+  chanceSoltarItemVida: 20
+  itemVidaPrefab: {fileID: 8792824406042452857, guid: c2a79dcc0c1449a488a26816c6060a04,
     type: 3}
 --- !u!50 &1839596391914680133
 Rigidbody2D:

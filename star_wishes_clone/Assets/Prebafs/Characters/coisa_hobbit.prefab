@@ -112,10 +112,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15f03714395c8e34b9711eb4885073cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidbody: {fileID: 0}
+  rigidbody: {fileID: 7630668971404586166}
   speedMin: 3
   speedMax: 6
-  particulaExplosaoPrefab: {fileID: 0}
+  particulaExplosaoPrefab: {fileID: 4459258619046765606, guid: 66e5dd7a303ccd54590c3617358009a6,
+    type: 3}
+  chanceSoltarItemVida: 20
+  itemVidaPrefab: {fileID: 8792824406042452857, guid: c2a79dcc0c1449a488a26816c6060a04,
+    type: 3}
 --- !u!50 &7630668971404586166
 Rigidbody2D:
   serializedVersion: 4
